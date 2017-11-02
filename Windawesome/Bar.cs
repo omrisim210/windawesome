@@ -115,7 +115,7 @@ namespace Windawesome
 		#endregion
 
 		public Bar(Monitor monitor, IEnumerable<IFixedWidthWidget> leftAlignedWidgets, IEnumerable<IFixedWidthWidget> rightAlignedWidgets,
-			IEnumerable<ISpanWidget> middleAlignedWidgets, int barHeight = 20, Font font = null, Color? backgroundColor = null)
+			IEnumerable<ISpanWidget> middleAlignedWidgets, int barHeight = 25, Font font = null, Color? backgroundColor = null)
 		{
 			this.monitor = monitor;
 			this.leftAlignedWidgets = leftAlignedWidgets.ToArray();
@@ -124,7 +124,7 @@ namespace Windawesome
 			this.barHeight = barHeight;
 			this.font = font ?? new Font("Lucida Console", 8);
 
-			this.form = CreateForm();
+            this.form = CreateForm();
 			if (backgroundColor != null)
 			{
 				this.form.BackColor = backgroundColor.Value;
