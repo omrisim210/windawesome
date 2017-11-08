@@ -23,7 +23,9 @@ namespace Windawesome
 				{
 					SetPriorities();
 
-					Application.EnableVisualStyles();
+                    // HighDPI info:
+                    // https://docs.microsoft.com/en-us/dotnet/framework/winforms/high-dpi-support-in-windows-forms
+                    Application.EnableVisualStyles();
 					Application.SetCompatibleTextRenderingDefault(false);
 
 					// set exception handling
